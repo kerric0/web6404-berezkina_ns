@@ -1,4 +1,4 @@
-/* по тегу */
+/* тег */
 body {
   margin: 0;
   font-family: "Press Start 2P", "Courier New", monospace;
@@ -13,7 +13,7 @@ h1, h2, h3 { color: #33691e; text-align: center; }
 h1 { font-size: 22px; }
 h2 { font-size: 16px; }
 
-/* по id */
+/* id */
 #main-header {
   background-color: #6d4c41;
   background-image: url("../img/home.jpg");
@@ -41,7 +41,7 @@ nav a {
 /* псевдокласс */
 nav a:hover { background-color: #ffb300; color: #3e2723; }
 
-/* по классу */
+/* класс */
 .container { max-width: 900px; margin: 20px auto; padding: 0 15px; }
 .card {
   background-color: #fff8e1;
@@ -81,7 +81,7 @@ th { background-color: #8bc34a; color: #1b5e20; }
 tr:nth-child(even) td { background-color: #f1f8e9; }
 tr:hover td { background-color: #fff59d; }
 
-/* три вида выравнивания */
+/* выравнивание */
 .left        { text-align: left; }
 .center-cell { text-align: center; }
 .right       { text-align: right; }

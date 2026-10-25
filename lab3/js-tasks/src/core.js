@@ -17,8 +17,8 @@ function even() {
     for (let i = 1; i <= 20; i++) {
         if ((i & 1) === 0){
             arr.push(i);
-        }
-    }
+        };
+    };
     return arr;
 }
 
@@ -30,8 +30,8 @@ function sumTo(n) {
     let sum = 0;
     for (let i = 1; i <= n; i++) {
         sum += i;
-    }
-    return sum
+    };
+    return sum;
 }
 
 /**
@@ -41,8 +41,8 @@ function sumTo(n) {
 function recSumTo(n) {
     if (n <= 1) {
         return n;
-    }
-    return n + recSumTo(n-1)
+    };
+    return n + recSumTo(n-1);
 }
 
 /**
@@ -51,8 +51,8 @@ function recSumTo(n) {
  */
 function factorial(n) {
     if (n <= 1){
-        return n;
-    }
+        return 1;
+    };
     return n * factorial(n-1);
 }
 
@@ -63,14 +63,14 @@ function factorial(n) {
 function isBinary(n) {
     if (n < 1) {
         return false;
-    }
+    };
 
     while (n > 1) {
         if (n % 2 !== 0) {
             return false;
-        }
+        };
         n = n / 2;
-    }
+    };
     return true;
 }
 
@@ -79,9 +79,9 @@ function isBinary(n) {
  * @param {*} n
  */
 function fibonacci(n) {
-    let a = 1
-    let b = 1
-    let c = 0
+    let a = 1;
+    let b = 1;
+    let c = 0;
     if (n === 1 || n === 2) {
         return 1;
     };

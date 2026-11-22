@@ -18,3 +18,13 @@ JavaScript: набор функций в проекте-каркасе `js-tasks
 замыкания (`getOperationFn`, `sequence`), 
 глубокое сравнение объектов `deepEqual`.
 Запуск тестов: `npm install`, затем `npm test`.
+
+# Лабораторная работа №4.
+
+Современный CSS и ООП на JavaScript: сайт по Stardew Valley из лабораторной №2, доработанный в папке `lab4` (6 страниц: добавлена `apply.html`, код в `css/style.css` и `js/main.js`).
+Вёрстка на Flexbox (`villagers.html`) и Grid (`seasons.html`),
+цвета заданы переменными CSS (`--color-*` в `:root`),
+CSS-анимация названия сайта в шапке (`@keyframes title-shine`),
+страница с формой заявки (текст, email, пароль, select, radio, textarea, checkbox),
+класс `FarmerApplication` с конструктором и методом `print()`: при отправке формы создаётся объект с введёнными данными и выводится в консоль,
+классы названы по методологии БЭМ (`nav__link`, `card__title`, `form__input` и т.д.).

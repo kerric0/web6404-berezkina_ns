@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang = "ru">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Заявка Stardew Valley</title>
+        <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css">
+        <script src="js/main.js" defer></script>
+    </head>
+    <body>
+        <header class="header">
+            <h1 class="header__title">Stardew Valley</h1>
+            <nav class="nav">
+                <a class="nav__link" href="index.html">Главная</a>
+                <a class="nav__link" href="crops.html">Урожай</a>
+                <a class="nav__link" href="seasons.html">Сезоны</a>
+                <a class="nav__link" href="villagers.html">Жители</a>
+                <a class="nav__link" href="tips.html">Советы</a>
+                <a class="nav__link" href="apply.html">Заявка</a>
+            </nav>
+        </header>
+
+        <main class="container">
+            <section class="card">
+                <h2 class="card__title">Заявка нового фермера</h2>
+                <p class="card__text">Заполни анкету, чтобы поселиться в долине Стардью!</p>
+
+                <form class="form" id="farmer-form" action="https://httpbin.org/post" method="post">
+                    <div class="form__field">
+                        <label class="form__label" for="name">Имя фермера</label>
+                        <input class="form__input" type="text" id="name" name="name" placeholder="Пэм" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label" for="email">Электронная почта</label>
+                        <input class="form__input" type="email" id="email" name="email" placeholder="Pam@stardew.com" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label" for="password">Пароль</label>
+                        <input class="form__input" type="password" id="password" name="password" minlength="4" required>
+                    </div>
+
+                    <div class="form__field">
+                        <label class="form__label" for="season">Любимый сезон</label>
+                        <select class="form__select" id="season" name="season">
+                            <option value="Весна">Весна</option>
+                            <option value="Лето">Лето</option>
+                            <option value="Осень">Осень</option>
+                            <option value="Зима">Зима</option>
+                        </select>
+                    </div>
+
+                    <fieldset class="form__field">
+                        <legend class="form__legend">Тип фермы</legend>
+                        <div class="form__options">
+                            <label class="form__option"><input type="radio" name="farm" value="Стандартная" checked>Стандартная</label>
+                            <label class="form__option"><input type="radio" name="farm" value="Лесная">Лесная</label>
+                            <label class="form__option"><input type="radio" name="farm" value="Речная">Речная</label>
+                            <label class="form__option"><input type="radio" name="farm" value="Горная">Горная</label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form__field">
+                        <label class="form__label" for="about">О себе</label>
+                        <textarea class="form__textarea" id="about" name="about" rows="4" placeholder="Что любишь делать в игре?"></textarea>
+                    </div>
+
+                    <label class="form__check">
+                        <input type="checkbox" id="agree" name="agree" required>
+                        Согласен на обработку данных
+                    </label>
+
+                    <button class="form__button" type="submit">Отправить</button>
+
+                    <p class="form__message" id="form-message" hidden>Заявка отправлена! Данные выведены в консоль браузера (F12).</p>
+                </form>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__text">Фан-сайт по Stardew Valley.</p>
+        </footer>
+    </body>
+</html>
